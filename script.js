@@ -21,7 +21,7 @@ let hours = today.getHours();
 
 
     const daysOfWeek = ["Sunday","Monday" ,"Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    
+
     const dayName = daysOfWeek[today.getDay()];
 
     const day = today.getDate().toString().padStart(2,"0");
@@ -30,7 +30,7 @@ let hours = today.getHours();
 
     const year = today.getFullYear();
 
-    const dateString = `${day}/${month}/${year} (${dayName})`;
+    const dateString = `${day}/${month}/${year} ${dayName}`;
 
     
     document.getElementById("clock").textContent =`${timestring} - ${dateString}`;
